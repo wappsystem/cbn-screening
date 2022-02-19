@@ -1,0 +1,76 @@
+<div id=D__ID>
+    <form id="F__ID">
+        <div id="header">
+            <header class="header header-fixed" id="D_6" module="header">
+              <div class="container">
+                <div class="header-inner">
+                  <div class="logo">
+                    <a href="#">
+                      <img src="images/c-logo.png" alt="SleepFix">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </header>
+          </div>
+          <main class="main" id="content">
+            <section class="hero e-hero" id="D_1" module="a" style="background-image: url(images/c-bg-0.png)">
+              <div class="container">
+                <div class="hero-inner e-hero-inner not-eligible">
+                  <div class="e-hero-text eligible-box-content">
+                    <h3>Thank you for taking the time to answer these questions. Unfortunately, the answers you provide indicate you are not eligible for the research study. </h3>
+                    <p class="e-p1">If you need help with any sleep difficulties or medical issues, you might consider the following:</p>
+                    <ul>
+                      <li>
+                        <p>Visit your GP or other health professional. If you don’t have a GP, there are some online service locators to help you find a GP or other services such as  <a href="https://www.healthdirect.gov.au/" target=_blank> Health Direct</a></p>
+                      </li>
+                      <li>
+                        <p>See one of our sleep specialists at the 
+                          <a href="https://www.woolcock.org.au/our-services" target=_blank >Woolcock Clinic:</a>
+                        </p>
+                      </li>
+                    </ul>
+                    <p class="e-p1">Email: info@woolcock.org.au<br>Phone: 02 9114 0000</p>
+                    <p>For further information about sleep in general, visit the Sleep Health Foundation 
+                        <a href="https://www.sleephealthfoundation.org.au/" target=_blank >website</a>
+                      </p>
+                      <p class="e-p1">If you are feeling at all distressed, please contact one of the following free 24-hour support services:</p>
+                      <ul>
+                        <li>
+                          <p>Lifeline (Telephone: 13 11 13; )  <a href="https://www.lifeline.org.au/" target=_blank> website</a></p>
+                        </li>
+                        <li>
+                          <p>Beyond Blue (Telephone 1300 22 4636;  
+                            <a href="https://www.beyondblue.org.au/" target=_blank >website</a>
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="e-p1">If you would like to speak to the research team about the study, please contact us using the details below.</p>
+                      <p class="e-p1">Phone: 02 9114 0452<br>Email: ###@woolcock.org.au</p>
+                      <h1>Thank you again for your time and effort.</h1>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>          
+    </form>
+    <script>
+    function F__ID(){
+      //-------------------------------------
+      VmInclude:'__COMPONENT__/f/form.01.js'
+      //-------------------------------------
+      m.default_load=m.load;
+      m.load=function(){
+          console.log("AA: "+JSON.stringify(m))
+          m.default_load();
+          $('#D__ID').scrollTop(0);
+          $(window).scrollTop(0);
+      }
+
+    }
+    </script>
+    <style>
+        VmInclude:__CURRENT_PATH__/../../css/style.css
+
+    </style>
+</div>

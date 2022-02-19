@@ -1,0 +1,24 @@
+<section>
+  VmInclude:__COMPONENT__/g/grid.01.html
+</section>
+<script>
+  function F__ID(){
+      //-------------------------------------
+      VmInclude:__COMPONENT__/g/grid.01.js
+      //-------------------------------------
+      $('#title__ID').text('Cleverlights recruitment')
+      //-------------------------------------
+      var fields="first_name,last_name,email,phone";
+      fields+=",age,location,fluent_english,internet";
+      fields+=",ISI_1,ISI_2,ISI_3,ISI_4,ISI_5,ISI_6,ISI_7,ISI_8,ISI";
+      fields+=",shiftwork,travel,illnesses,depression,heart_failure,epilepsy,bipolar,dementia,sleep_disorders,osa,rls";
+      fields+=",map_age,gender,weight,height,bmi,MAP_1,MAP_2,MAP_3,MAP";
+      fields+=",medication,sleep_medication,diazepam,flunitrazepam,lorazepam,melatonin,nitrazepam,oxazepam,temazepam,zopiclone,zolpidem";
+      fields+=",cpap,mas,therapy,cannabis,PHQ_9,urine_sample,swallowing_capsules,overseas,pregnant";
+      m.fields="_Form,"+fields+",Submit_date,Submitted_by,_Delete";
+      //-------------------------------------
+  }
+</script>
+<style>
+  VmInclude:__COMPONENT__/g/grid.01.css
+</style>

@@ -1,0 +1,124 @@
+<div id=D__ID>
+    <div id="header">
+        <header class="header header-fixed">
+          <div class="container">
+            <div class="header-inner">
+              <div class="logo">
+                <a href="#">
+                  <img src="images/c-logo.png" alt="SleepFix" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+    </div>
+    <main class="main" id="content">
+        <section class="hero c-hero background-size-l" style="background-image: url(images/c-bg-2.png)">
+          <div class="container">
+            <div class="hero-inner">
+              <div class="hero-text">
+                <h1>
+                  Welcome to the CBN Insomnia <br />
+                  Research Study
+                </h1>
+              </div>
+            </div>
+            <div class="text-info c-hero-text-info">
+              <p>We invite you to participate in an exciting new research study that involves testing a new medication that may help improve sleep and daytime function in people with chronic insomnia.</p>
+            </div>
+          </div>
+        </section>
+        <section class="consumer" id="D_3" module="c">
+          <div class="container">
+            <h2>You may be eligible to participate in this study if you: 
+                </h2>
+            <div class="consumer-list">
+              <div class="consumer-item">
+                <div class="consumer-img">
+                  <img src="images/c-circle-1.png" alt="image description" />
+                </div>
+                <span class="consumer-text">Live in New South Wales </span>
+              </div>
+              <div class="consumer-item">
+                <div class="consumer-img">
+                  <img src="images/c-circle-2.png" alt="image description" />
+                </div>
+                <span class="consumer-text">Are aged 25 to 60 years</span>
+              </div>
+              <div class="consumer-item">
+                <div class="consumer-img">
+                  <img src="images/c-circle-3.png" alt="image description" />
+                </div>
+                <span class="consumer-text">Have chronic insomnia (persistent problems falling or staying asleep)</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cti">
+          <div class="container">
+            <div class="cti-wrap">
+              <div class="cti-box align-end">
+                <div class="cti-img">
+                  <img src="images/c-img-2.png" alt="medicine" />
+                </div>
+              </div>
+              <div class="cti-box">
+                <div class="cti-text caveat">
+                  <p>This study will test the effects of two doses of a cannabis-based medicine on sleep and daytime function in people with chronic insomnia. </p>
+                </div>
+              </div>
+              <div class="cti-box align-start">
+                <div class="cti-img">
+                  <img src="images/c-img-1.png" alt="medicine" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cta" id="D_4 " module="d ">
+          <div class="container">
+            <div class="cta-inner">
+              <div class="cta-text">
+                <p class="text-transparent text-lead">
+                    If eligible, you will need to come into the Woolcock Institute of Medical Research in Glebe, Sydney and stay in one of our overnight sleep suites on four occasions. We will measure various aspects of your sleep and cognition over an 18-hour period. You will receive reimbursement for your time and, at no expense to you, study medication and study-related evaluations from a doctor. 
+                </p>
+                <p class="text-transparent text-lead">
+                    Your participation in this study is voluntary.                </p>
+                <div class="btn-holder">
+                  <p><strong>I agree to complete a screening questionnaire to determine whether I am suitable for the study: </strong></p>
+                  <button id="yes__ID" class="btn btn-white">YES, I AGREE</button> <button id="no__ID" class="btn btn-white">No THANKS</button>
+                </div>
+                <div id="message__ID" style='display:none'>                
+                    <p class="text-transparent text-lead">
+                        Completing questionnaires is necessary to be part of the study.                  
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="info" id="D_5 " module="e ">
+          <div class="container">
+            <div class="info-inner">
+              <p>This study has received ethical approval from Bellberry Human Research Ethics Committee (Protocol number: 2021-08-907). This research is supported by the Lambert Initiative for Cannabinoid Therapeutics, Brain and Mind Centre, University of Sydney. </p>
+              <p>If you have any questions, please contact us at [EMAIL] or [TELEPHONE].  </p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+	<script>
+		function F__ID(){
+			var m=$vm.module_list['__MODULE__'];
+			if(m.prefix==undefined) m.prefix="";
+            console.log("AAA: "+JSON.stringify(m.input))
+			$('#yes__ID').on('click',function(){	$vm.load_module(m.prefix+'recruitment-form','',{});	})
+			$('#no__ID').on('click',function(){		$('#message__ID').css('display','block')})
+		}
+		$vm.home_ready=1;
+	</script>
+	<style>
+        VmInclude:__CURRENT_PATH__/../../css/style.css
+	</style>
+</div>
