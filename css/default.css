@@ -1,0 +1,320 @@
+html, body {
+  position: absolute;
+  overflow-x: hidden;
+  width:100%;
+}
+
+body {
+  background-color: white;
+  font-family: Helvetica;
+  margin: 0px;
+}
+
+@font-face {
+    font-family: 'suisse_intl_trialregular';
+    src: url('suisseintltrial-webfont.woff2') format('woff2'),
+         url('suisseintltrial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'suisse_intl_trialmedium';
+    src: url('suisseintltrial-medium-webfont.woff2') format('woff2'),
+         url('suisseintltrial-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'suisse_intlregular';
+    src: url('suisseintl-regular-webfont.woff2') format('woff2'),
+         url('suisseintl-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.divider {
+  background-repeat: stretch;
+  background-size: 100% 100%;
+}
+
+.divider1 {
+  background-image: url(images/Divider_1.png);
+  height: 150px;
+}
+
+.divider3 {height: 100px;}
+
+#container {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+header {
+  background-color: #2a3e4b;
+  text-align: center;
+  min-height: 175px;
+  color: #f3e8d0;
+}
+
+header .text {padding-top: 50px;}
+
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+}
+
+.star1, .star2, .star3 {position: absolute;}
+
+.star1 {
+  width: 25px;
+  top: 10px;
+  left: 120px;
+}
+
+.star2 {
+  width: 30px;
+  top: 50px;
+  left: 20px;
+}
+
+.star3 {
+  width: 40px;
+  top: 130px;
+  left: 30px;
+}
+
+.text {
+  width: 60vw;
+  margin: 0px 20vw;
+  text-align: center;
+}
+
+.text40 {
+  width: 40vw;
+  margin: 0px 30vw;
+  text-align: center;
+}
+
+#secondlayer {
+  background-color: #f3e8d0;
+  font-size: 1.25em;
+}
+
+.medical {
+  position: absolute;
+  top: 80px;
+  right: -50px;
+  width: 500px;
+}
+
+#thirdlayer {
+  background-image: url(images/Divider_2.png);
+  background-color: #b5ccd0;
+  padding: 150px 0px;
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexboxes {
+  width: 250px;
+  height: 350px;
+}
+
+.firstflexbox {padding:0px 0px;}
+
+.xfloatmiddlecircle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 25px;
+  max-height: 200px;
+  height: 200px;
+  max-width: 200px;
+  width: 200px;
+  flex-grow: 1;
+  border-radius: 50%;
+  background-color: #f4cdb1;
+}
+
+.xfloatmiddlecircle img {
+  width: 150px;
+  height: 150px;
+  padding: 25px;
+}
+
+.circletext {
+  width: 200px;
+  margin-left: 25px;
+}
+
+#thirdlayer h2 {font-weight: 600; font-size: 1.75em;}
+
+.circletext h3 {font-weight: 600; font-size: 1.2em;}
+
+#fourthlayer {
+  background-color: #f3e8d0;
+  padding-bottom: 50px;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.cross {
+  max-width: 50px;
+  display: flex;
+  flex: 1;
+  padding: 10px 0px;
+}
+
+.fourthlayertext {
+  display: flex;
+  flex: 3;
+  padding: 10px 0px;
+}
+
+#fifthlayer {
+  background-color: #f4cdb1;
+}
+
+#fifthlayer  h3 {
+  font-weight: 500;
+}
+
+#agree {
+  display: flex;
+  justify-content: center;
+}
+
+#fifthlayer button {
+  max-width: 100px;
+  min-width: 80px;
+  height: 50px;
+  background-color: #b5ccd0;
+  border-radius: 5px;
+  margin: 25px;
+  font-size: 1.10em;
+  flex: 1;
+}
+
+footer {
+  background-color: #f4cdb1;
+}
+
+footer img {
+  max-width: 50%;
+}
+
+.footerlogo {
+  display: flex;
+  flex: 1;
+}
+
+.footerthird {
+  flex: 1;
+}
+
+.tsandcs {
+  padding-top: 25px;
+}
+
+.copy {position: relative;}
+
+.copyright {
+  position: absolute;
+  bottom: 0px;
+  font-size: .75em;
+  text-align: center;
+}
+
+.logos {
+  margin-top: 20px;
+  display: flex;
+}
+
+@media (max-width: 1280px) {
+  .flexrow {gap: 0px !important;}
+  .medical {
+    top: 180px;
+    right: -100px;
+    width: 350px;
+  }
+  #thirdlayer {background-size: 200% 100%; background-position: 50% 0%;}
+  #thirdlayer .text {padding-bottom: 100px;}
+  .fourthlayertext {font-size: .8em;padding-left:20px;}
+}
+
+@media (max-width: 800px) {
+  header .text {
+    width: 50vw !important;
+    margin: 0px 25vw;
+    padding-top: 100px;
+  }
+
+  .medical {
+    top: 400px;
+    right: -100px;
+    width: 300px;
+  }
+
+  .divider3 {height: 50px;}
+
+  .logo {width: 80px;}
+
+  .star1 {width: 17.5px;}
+
+  .star2 {width: 25px;}
+
+  .star3 {width: 35px;}
+
+  #thirdlayer {padding-bottom: 100px;}
+
+  #thirdlayer .text {padding: 150px 0px;}
+
+  #thirdlayer {background-size: 200% 100%; background-position: 50% 0%;}
+
+  #fifthlayer button {
+    max-width: 75px;
+    min-width: 75px;
+    height: 60px;
+  }
+
+  footer img {
+    max-width: 80%;
+    margin: 10%;
+  }
+
+}
