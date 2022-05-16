@@ -279,15 +279,16 @@
     font-weight: 400;
     letter-spacing: 0.15px;
 }
+
 #D__ID a {
-    color: #ee1e0e;
+    color: #1c2350;;
 }
 #D__ID a,
 #D__ID a:hover {
-    text-decoration: none;
+    /*text-decoration: none;*/
 }
 #D__ID a:hover {
-    color: #be180b;
+    color: #7ebdb2;
 }
 #D__ID a,
 #D__ID button {
