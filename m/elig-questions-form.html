@@ -835,8 +835,8 @@
                             <div class="row">
                                 <div class="col-sm control-group">
                                     <h5>Based on the responses you have provided you may be eligible for the research study.<br><br>
-                                        If you are interested in participating, <b>please provide your contact details below</b> and we will contact you shortly.<br><br>
-                                        Also, you can access the full study information <a href="#" style="color:#4472C4" data-toggle="modal"
+                                        If you are interested in participating, <span style="font-weight: bold;">please provide your contact details below</span> and we will contact you shortly.<br><br>
+                                        Please download the full study information <a href="#" style="color:#4472C4" data-toggle="modal"
                                         data-target="#terms-txt">HERE </a>
                                     </h5>
                                 </div>
@@ -1136,6 +1136,39 @@
                     $('#pregnant__ID').removeAttr('required');
                 }
             });
+            //---------------------------------------
+            $("#none_illness__ID").on('change', function () {
+                if ($("#none_illness__ID:checked").val() == 'on') {
+                    $("#Epilepsy__ID").prop('checked', false);
+                    $("#Brain_injury__ID").prop('checked', false);
+                    $("#Heart_problems__ID").prop('checked', false);
+                    $("#Bipolar_disorder__ID").prop('checked', false);
+                    $("#Dementia__ID").prop('checked', false);
+                }
+            });
+            //---------------------------------------
+            $("#none_therapy__ID").on('change', function () {
+                if ($("#none_therapy__ID:checked").val() == 'on') {
+                    $("#therapy__ID").prop('checked', false);
+                    $("#mas__ID").prop('checked', false);
+                    $("#cpap__ID").prop('checked', false);
+                }
+            });
+            //---------------------------------------
+            $("#none_medication__ID").on('change', function () {
+                if ($("#none_medication__ID:checked").val() == 'on') {
+                    $("#zolpidem__ID").prop('checked', false);
+                    $("#zopiclone__ID").prop('checked', false);
+                    $("#temazepam__ID").prop('checked', false);
+                    $("#nitrazepam__ID").prop('checked', false);
+                    $("#melatonin__ID").prop('checked', false);
+                    $("#oxazepam__ID").prop('checked', false);
+                    $("#lorazepam__ID").prop('checked', false);
+                    $("#flunitrazepam__ID").prop('checked', false);
+                    $("#diazepam__ID").prop('checked', false);
+                }
+            });
+            
             //-------------------------------------
             $('#weight__ID').on('keyup', function () {
                 if ($('#height__ID').val() !== '' || $('#height__ID').val() !== undefined || $('#weight__ID').val() !== '' || $('#weight__ID').val() !== undefined) {
