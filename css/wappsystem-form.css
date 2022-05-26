@@ -72,7 +72,7 @@
     margin-bottom: 0px !important;*/
 }
 #D__ID .form-group:hover {
-     background-color: #FCFBF5
+     background-color: #f5fbfc
 }
 /* SUBMIT BUTTON 
 #D__ID .btn-primary, #D__ID .btn-primary:active, #D__ID .btn-primary:visited, #D__ID .btn-primary:focus {
@@ -235,25 +235,21 @@
     font-family: 'Asap';
     font-size: 16px;
     color: #6D6F72;
-    background-color:  #dee7ef;
 }
 #D__ID .form-group input[type=tel] {
     font-family: 'Asap';
     font-size: 16px;
     color: #6D6F72;
-    background-color:  #dee7ef;
 }
 #D__ID .form-group input[type=email] {
     font-family: 'Asap';
     font-size: 16px;
     color: #6D6F72;
-    background-color:  #dee7ef;
 }
 #D__ID .form-group input[type=number] {
     font-family: 'Asap';
     font-size: 16px;
     color: #6D6F72;
-    background-color:  #dee7ef;
 }
 #D__ID .form-group select {
     font-family: 'Asap';

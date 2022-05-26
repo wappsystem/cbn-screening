@@ -12,12 +12,44 @@
       fields+=",Age,English,Sydney";
       fields+=",ISI_1,ISI_2,ISI_3,ISI_4,ISI_5,ISI_6,ISI_7,ISI";
       fields+=",osa,rls,narcolepsy";
-      fields+=",MAP_1,MAP_2,MAP_3,MAP,weight,height,bmi,gender,MAP";
+      fields+=",MAP_1,MAP_2,MAP_3,MAP,weight,height,bmi,gender";
       fields+=",RLS01,RLS02,RLS03,Condition,PHQ_9";
       fields+=",Epilepsy,Brain_injury,Heart_problems,Bipolar_disorder,Dementia,none_illness";
-      fields+=",diazepam,flunitrazepam,lorazepam,melatonin,nitrazepam,oxazepam,temazepam,zopiclone,zolpidem,none_medication";
+      fields+=",sleep_medication,diazepam,flunitrazepam,lorazepam,melatonin,nitrazepam,oxazepam,temazepam,zopiclone,zolpidem,none_medication";
       fields+=",cpap,mas,therapy,none_therapy,Shift_work,PHQ_9,Pregnant,Smoking,Abstain_Smoking,Cannabis,Cannabis_lifetime,Alcohol_drug_dependence,Drug_testing,Willing_attend,Abstain_caffeine";
       m.fields="_Form,"+fields+",Submit_date,Submitted_by,_Delete";
+      //-------------------------------------
+      var cell_render = m.cell_render;
+        m.cell_render=function(records,I,field,td){
+            switch(field){
+                case 'Epilepsy':
+                case 'Brain_injury':
+                case 'Heart_problems':
+                case 'Bipolar_disorder':
+                case 'Dementia':
+                case 'none_illness':
+                case 'sleep_medication':
+                case 'diazepam':
+                case 'flunitrazepam':
+                case 'lorazepam':
+                case 'melatonin':
+                case 'nitrazepam':
+                case 'oxazepam':
+                case 'temazepam':
+                case 'zopiclone':
+                case 'zolpidem':
+                case 'zolpidem':
+                case 'none_medication':
+                case 'cpap':
+                case 'mas':
+                case 'therapy':
+                case 'none_therapy':
+                    if(records[I].Data[field]=="on") td.html("1");
+                    else td.html("0")
+                break;
+            }
+            return cell_render;
+        }
       //-------------------------------------
   }
 </script>
