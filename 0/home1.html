@@ -14,7 +14,13 @@
     
             <div class="divider divider1"></div>
     
-        <div id="secondlayer"><img class="medical" src="images/Image_Cannabinoid_tincture.png" /><div class="text">We invite you to participate in an exciting new research study that involves testing a cannabis-based medication, containing cannabinol (CBN), that may help improve sleep and daytime function in people with chronic insomnia.</div></div>
+        <div id="secondlayer"><img class="medical" src="images/Image_Cannabinoid_tincture.png" />
+            <div class="text">
+                <p ><b>This study will not be recruiting any new participants. If you have registered your interest, a member of the research study will be in contact to provide referral information.</b></p>
+                <p ><b>You can find other Woolcock Institute of Medical Research studies actively recruiting at: <a href="https://www.researchvolunteer.org.au/studylist/" target="_blank">https://www.researchvolunteer.org.au/studylist/</a></b></p>
+                <p ><b>If you would like to be contacted about future Woolcock Institute studies, please register at: <a href="https://www.researchvolunteer.org.au/" target="_blank">https://www.researchvolunteer.org.au/</a></b></p>
+            </div>
+        <div class="text">We invite you to participate in an exciting new research study that involves testing a cannabis-based medication, containing cannabinol (CBN), that may help improve sleep and daytime function in people with chronic insomnia.</div></div>
     
         <div id="thirdlayer" class="divider">
                 <div class="text">
@@ -43,7 +49,7 @@
                 <h2>Your participation in this study is voluntary.</h2>
                 <h3>I agree to complete a screening questionnaire to determine whether I am suitable for the study:</h3>
                     <div id="agree">
-                        <button id="yes__ID" >I Agree</button> <button id="no__ID" >No Thanks</button>
+                        <!--<button id="yes__ID" >I Agree</button> <button id="no__ID" >No Thanks</button>-->
                     </div>
                     <div id="message__ID" style='display:none'>                
                         <p class="text-transparent text-lead">
@@ -56,10 +62,6 @@
 	<script>
 		function F__ID(){
 			var m=$vm.module_list['__MODULE__'];
-			if(m.prefix==undefined) m.prefix="";
-            console.log("AAA: "+JSON.stringify(m.input))
-			$('#yes__ID').on('click',function(){	$vm.load_module(m.prefix+'recruitment-form','',{});	})
-			$('#no__ID').on('click',function(){		$('#message__ID').css('display','block')})
 		}
 		$vm.home_ready=1;
 	</script>
